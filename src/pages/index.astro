@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import Linkedin from '../icons/Linkedin.astro';
+import GitHub from '../icons/GitHub.astro';
+import Mail from '../icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Suitcase from '../icons/Suitcase.astro';
+---
+
+<Layout 
+title="Portafolio de Andres Romo - Desarrollador y Programador Web"
+description="Contrata a Andres Romo para crear tu sitio web, aplicacion web o aplicacion movil. Desarrollador web con 2 años de experiencia. Creador de contenido. De Huancayo, Perú. Especializador en crear aplicaciones únicas. Disponible para trabajar."
+>
+  <main>
+    <SectionContainer class="py-44 pb-24">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="https://i.postimg.cc/wjzfKXNx/miLogo.png"
+        alt="logo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola, soy Andres <a
+          href="https://www.linkedin.com/in/andres-rt-xd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span>+2 años de experiencia.</span>
+        <span class="opacity-80">Desarrollador Web y Creador de Contenido.</span>
+        <span>De Huancayo, Perú.</span>
+		<span>Especializado en crear aplicaciones únicas</span>
+      </h2>
+
+	  <ul>
+		<nav class="flex gap-x-4 mt-10">
+			<SocialPill href="https://www.linkedin.com/in/andres-rt-xd/">
+				<Linkedin class="size-6" />
+				LinkedIn
+			</SocialPill>
+			<SocialPill  href="https://github.com/AndresitoPEx/">
+				<GitHub class="size-6" />
+				GitHub
+			</SocialPill>
+			<SocialPill  href="https://github.com/AndresitoPEx/">
+				<Mail class="size-6" />
+				Gmail
+			</SocialPill>
+		</nav>
+	  </ul>
+    </SectionContainer>
+
+	<SectionContainer id="experiencia">
+		<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+			<Suitcase class="size-8 mr-2" />
+			Experiencia Laboral
+
+		</h2>
+		<Experience />
+	</SectionContainer>
+  </main>
+</Layout>
+
