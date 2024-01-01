@@ -1,71 +1,74 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro";
+import ExperienceItem from './ExperienceItem.astro';
 const EXPERIENCE = [
+  {
+    title: 'Full Stack Developer',
+    company: 'Delta Tactical Gear',
+    location: 'Lima, Perú',
+    startDate: '2022 - Actualidad',
+    endDate: '2020-01-01',
+    description:
+      'I worked on the Google Maps team as a full-stack engineer. I helped build the new version of the Google Maps website using React, Redux, and Mapbox GL JS.',
+    tags: ['React', 'Redux', 'Mapbox GL JS'],
+    link: 'https://www.google.com/maps',
+  },
 
-    {
-        title: 'Software Engineer',
-        company: 'Instituto Continental',
-        location: 'Huancayo, Perú',
-        startDate: 'Mayo - 2022',
-        endDate: '2020-01-01',
-        description: 'I worked on the Google Maps team as a full-stack engineer. I helped build the new version of the Google Maps website using React, Redux, and Mapbox GL JS.',
-        tags: ['React', 'Redux', 'Mapbox GL JS'],
-        link: 'https://www.google.com/maps'
-    },
-    
-    {
-        title: 'Software Engineer',
-        company: 'Facebook',
-        location: 'Menlo Park, CA',
-        startDate: '2017-01-01',
-        endDate: '2019-01-01',
-        description: 'I worked on the Facebook Events team as a full-stack engineer. I helped build the new version of the Facebook Events website using React, Redux, and GraphQL.',
-        tags: ['React', 'Redux', 'GraphQL'],
-        link: 'https://www.google.com/maps'
-    },
-    
-    {
-        title: 'Software Engineer',
-        company: 'Airbnb',
-        location: 'San Francisco, CA',
-        startDate: '2015-01-01',
-        endDate: '2017-01-01',
-        description: 'I worked on the Airbnb Experiences team as a full-stack engineer. I helped build the new version of the Airbnb Experiences website using React, Redux, and GraphQL.',
-        tags: ['React', 'Redux', 'GraphQL'],
-        link: 'https://www.google.com/maps'
-    },
-    
-    {
-        title: 'Software Engineer',
-        company: 'Uber',
-        location: 'San Francisco, CA',
-        startDate: '2013-01-01',
-        endDate: '2015-01-01',
-        description: 'I worked on the Uber Eats team as a full-stack engineer. I helped build the new version of the Uber Eats website using React, Redux, and GraphQL.',
-        tags: ['React', 'Redux', 'GraphQL'],
-        link: 'https://www.google.com/maps'
-    },
-    
-    {
-        title: 'Software Engineer',
-        company: 'Lyft',
-        location: 'San Francisco, CA',
-        startDate: '2011-01-01',
-        endDate: '2013-01-01',
-        description: 'I worked on the Lyft team as a full-stack engineer. I helped build the new version of the Lyft website using React, Redux, and GraphQL.',
-        tags: ['React', 'Redux', 'GraphQL'],
-        link: 'https://www.google.com/maps'
-    }
+  {
+    title: 'Front End Developer',
+    company: 'Fly Alone',
+    location: 'Huancayo, Perú',
+    startDate: '2023',
+    endDate: '2015-01-01',
+    description:
+      'I worked on the Uber Eats team as a full-stack engineer. I helped build the new version of the Uber Eats website using React, Redux, and GraphQL.',
+    tags: ['React', 'Redux', 'GraphQL'],
+    link: 'https://www.google.com/maps',
+  },
 
+  {
+    title: 'Front End Developer',
+    company: 'Pediatra Perú',
+    location: 'Huancayo, Perú',
+    startDate: '2023',
+    endDate: '2019-01-01',
+    description:
+      'I worked on the Facebook Events team as a full-stack engineer. I helped build the new version of the Facebook Events website using React, Redux, and GraphQL.',
+    tags: ['React', 'Redux', 'GraphQL'],
+    link: 'https://www.google.com/maps',
+  },
+
+  {
+    title: 'Front End Developer',
+    company: 'Small Tube',
+    location: 'Proyecto Bootcamp',
+    startDate: '2023',
+    endDate: '2017-01-01',
+    description:
+      'I worked on the Airbnb Experiences team as a full-stack engineer. I helped build the new version of the Airbnb Experiences website using React, Redux, and GraphQL.',
+    tags: ['React', 'Redux', 'GraphQL'],
+    link: 'https://www.google.com/maps',
+  },
+
+  {
+    title: 'Software Engineer',
+    company: 'Lyft',
+    location: 'San Francisco, CA',
+    startDate: '2011-01-01',
+    endDate: '2013-01-01',
+    description:
+      'I worked on the Lyft team as a full-stack engineer. I helped build the new version of the Lyft website using React, Redux, and GraphQL.',
+    tags: ['React', 'Redux', 'GraphQL'],
+    link: 'https://www.google.com/maps',
+  },
 ];
 ---
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
-    {
-        EXPERIENCE.map(experience => (
-            <li class="mb-10 ms-4">
-                <ExperienceItem {...experience} />
-            </li>
-        ))
-    }                  
-</ol>
 
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
