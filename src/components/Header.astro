@@ -1,11 +1,23 @@
-<header class="flex justify-between items-center py-5 w-[1120px] mx-auto">
+<header class="flex flex-col md:flex-row justify-between items-center py-5 px-4 md:px-0 w-full xl:w-[1120px] mx-auto">
+  <!-- Logo -->
   <img
-    class="rounded-full size-16"
+    class="rounded-full size-16 mb-4 md:mb-0 md:mr-4"
     src="https://i.postimg.cc/wjzfKXNx/miLogo.png"
     alt="logo"
   />
-  <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="#top">Inicio</a>
+
+  <!-- Navegación para pantallas pequeñas -->
+  <nav class="md:hidden flex flex-row gap-x-2 items-center tracking-tighter">
+    <a href="#top" class="mb-2 text-md">Inicio</a>
+    <a href="#experiencia" class="mb-2 text-md">Experiencia</a>
+    <a href="#proyectos" class="mb-2 text-md">Proyectos</a>
+    <a href="#sobre-mi" class="mb-2 text-md">Sobre Mi</a>
+    <a href="#contacto" class="mb-2 text-md">Contacto</a>
+  </nav>
+
+  <!-- Navegación para pantallas medianas y grandes -->
+  <nav class="hidden md:flex flex-row gap-x-10 opacity-80 text-md font-semibold tracking-wider">
+    <a href="#top" >Inicio</a>
     <a href="#experiencia">Experiencia</a>
     <a href="#proyectos">Proyectos</a>
     <a href="#sobre-mi">Sobre Mi</a>
