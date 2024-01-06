@@ -31,35 +31,25 @@ const PROJECTS = [
     link: 'https://www.deltatacticalshop.com/',
     github: 'https://github.com/AndresitoPEx/deltavite',
     tags: [TAGS.NEXT, TAGS.TAILWIND],
-  }
+  },
 ];
 ---
 
 {
   PROJECTS.map(({ image, title, description, tags }) => (
-    <article class="
-        flex flex-col gap-y-4
-        bg-white/5
-        rounded
-        p-4
-        my-10
-        shadow-2xl
-        shadow-white/10
-        backdrop-filter backdrop-blur-sm
-        transition
-        hover:shadow-white/20
-        hover:bg-white/20
-        hover:backdrop-blur-md
-        hover:backdrop-filter
-        hover:backdrop-contrast-100
-        hover:backdrop-grayscale-0
-        hover:backdrop-hue-rotate-0
-        hover:backdrop-invert-0
-        hover:backdrop-opacity-100
-        hover:backdrop-saturate-100
-        hover:backdrop-sepia-0
-        hover:backdrop-drop-shadow-sm
-    ">
+    <article
+      class="
+  flex flex-col gap-y-4
+  bg-white/5 rounded p-4 my-10
+  shadow-2xl shadow-white/10
+  backdrop-filter backdrop-blur-sm transition
+  hover:shadow-white/20 hover:bg-white/20 hover:backdrop-blur-md
+  hover:backdrop-contrast-100 hover:backdrop-grayscale-0
+  hover:backdrop-hue-rotate-0 hover:backdrop-invert-0
+  hover:backdrop-opacity-100 hover:backdrop-saturate-100
+  hover:backdrop-sepia-0 hover:backdrop-drop-shadow-sm
+"
+    >
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
